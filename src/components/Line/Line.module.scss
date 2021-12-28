@@ -1,0 +1,33 @@
+$breakpoint-s: 767px;
+
+.line {
+	display: flex;
+	overflow: hidden;
+	&__content {
+		padding: 0 10px;
+		font-size: 210px;
+		line-height: 0.9;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		white-space: nowrap;
+		animation: line-anim 30s infinite both linear;
+		@media (max-width: 1199px) {
+			font-size: 144px;
+			line-height: 1.2;
+		}
+	
+		@media (max-width: $breakpoint-s) {
+			font-size: 96px;
+		}
+	}
+}
+
+@keyframes line-anim {
+	0% {
+	 transform: translate3d(0, 0, 0);	
+	}
+	100% {
+	transform: translate3d(-100%, 0, 0);	
+	}
+}
+

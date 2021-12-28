@@ -1,0 +1,117 @@
+.account {
+
+	&__subtitle {
+		padding-bottom: 20px;
+	}
+
+	&__text-block {
+		padding-bottom: 15px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 144%;
+
+		@media (max-width: $breakpoint-l) {
+			padding-bottom: 10px;
+			font-size: 16px;
+			line-height: 162%;
+		}
+
+
+
+		span {
+			font-weight: 500;
+			margin-left: 18px;
+		}
+	}
+
+	&__content {
+		padding: 40px 0 80px;
+
+
+
+		@media (max-width: $breakpoint-s) {
+			padding: 0 0 60px;
+		}
+	}
+
+	&__input-block {
+		padding-bottom: 20px;
+
+
+
+
+	}
+
+	&__button-block {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $breakpoint-s) {
+			display: block;
+		}
+
+		&>* {
+			@media (max-width: $breakpoint-s) {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+
+		&>*:not(:last-child) {
+			@media (max-width: $breakpoint-s) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.account-mob {
+
+	&__title {
+		padding: 36px 0;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-right: 20px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 156%;
+		}
+	}
+
+	&__link:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__link-block {
+		padding-top: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-left: 20px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 156%;
+		}
+	}
+
+	&__button-block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0 20px 15px;
+		border-bottom: 1px solid #1A1A1A;
+		margin: 0 -20px;
+	}
+}

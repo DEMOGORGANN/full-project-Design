@@ -1,0 +1,53 @@
+
+.title {
+	text-align: center;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 108%;
+	height: 148px;
+	border-bottom: 1px solid #1A1A1A;
+	padding: 80px 55px 10px;
+	position: relative;
+}
+
+.close {
+	
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	cursor: pointer;
+}
+
+.sublist {
+	&_item {
+		padding-bottom: 10px;
+	}
+}
+
+.button {
+	
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 156%;
+	svg {
+		margin-left: 20px;
+	}
+}
+
+.button_block {
+	padding: 60px 40px 10px;
+
+	&>* {
+		width: 100%;
+	}
+}
+
+.reset {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 156%;
+	text-align: center;
+	padding: 20px;
+}

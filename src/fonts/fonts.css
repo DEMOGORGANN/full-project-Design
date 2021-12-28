@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'PTRootUIWebVF';
+	src:
+		url('PT-Root-UI/PT-Root-UI_VF.woff2') format('woff2'),
+		url('PT-Root-UI/PT-Root-UI_VF.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUIWebVF';
+	src:
+		url('PT-Root-UI/PT-Root-UI_VF500.woff2') format('woff2'),
+		url('PT-Root-UI/PT-Root-UI_VF500.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}

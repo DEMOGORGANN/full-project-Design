@@ -1,0 +1,308 @@
+.catalog-page {
+	&__title {
+		padding: 40px 0 25px;
+
+		@media (max-width: $breakpoint-l) {
+			padding: 40px 0 20px;
+		}
+
+		@media (max-width: $breakpoint-s) {
+			padding: 30px 0 20px;
+		}
+	}
+
+	&__seo {
+		border-top: 1px solid #1A1A1A;
+	}
+
+}
+
+.catalog {
+	clip-path: inset(0 1px 0 0);
+
+	&__content {
+		// margin-right: -1px;
+		border-top: 1px solid #1A1A1A;
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-auto-rows: calc(100vw / 4 * 1.06);
+
+		@media (max-width: $breakpoint-l) {
+			grid-template-columns: repeat(2, 50%);
+			grid-auto-rows: calc(100vw / 2 * 1.06);
+		}
+
+		@media (max-width: $breakpoint-s) {
+			display: block;
+		}
+	}
+
+	&__img-block {
+		width: 100%;
+		grid-column: 1/span 2;
+		grid-row: 1/span 3;
+		border-right: 1px solid #1A1A1A;
+		border-bottom: 1px solid #1A1A1A;
+
+	}
+
+	&__img {
+		height: calc((100vw / 4 * 1.06) * 2);
+		width: 100%;
+		top: 0;
+		position: sticky;
+		border-bottom: 1px solid #1A1A1A;
+
+	}
+
+	.card__img {
+		display: block;
+		width: 100%;
+		height: calc(100% - 76px);
+
+
+
+
+	}
+
+	.card {
+		border-right: 1px solid #1A1A1A;
+		border-bottom: 1px solid #1A1A1A;
+
+		@media (max-width: $breakpoint-s) {
+			border-right: none;
+			height: 106vw;
+		}
+	}
+
+	&__mob-img {
+		border-top: 1px solid #1A1A1A;
+		height: 74vw;
+
+		@media (max-width: $breakpoint-s) {
+			height: 92vw;
+		}
+	}
+}
+
+.seo {
+	padding: 80px 0 1px;
+	width: 80%;
+
+	@media (max-width: $breakpoint-l) {
+		padding: 60px 0 1px;
+		width: 100%;
+	}
+
+
+
+	&__content {
+		max-height: 208px;
+		overflow: hidden;
+
+		.open & {
+			max-height: none;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: $title-font-family;
+			font-size: 22px;
+			line-height: 127%;
+			padding-bottom: 40px;
+		}
+
+		div,
+		p,
+		span {
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 156%;
+
+		}
+	}
+
+	&__button {
+		cursor: pointer;
+		margin-top: 42px;
+		display: inline-flex;
+		align-items: center;
+
+
+
+
+
+		span {
+			font-size: 18px;
+			line-height: 144%;
+			font-family: $title-font-family;
+			margin-right: 24px;
+
+
+
+
+		}
+
+		.open & svg {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.filter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 30px;
+
+	@media (max-width: $breakpoint-l) {
+		padding-right: 0;
+	}
+
+	
+
+	&__content {
+		position: relative;
+	}
+
+	&__panels {
+		position: absolute;
+		width: 100vw;
+		background: #FBFBFB;
+		height: 0;
+		left: 0;
+		top: 100%;
+		z-index: 10;
+		overflow: hidden;
+		transition: 0.3s;
+
+		
+
+		
+	}
+
+	&__panels.open {
+		height: 383px;
+
+		@media (max-width: $breakpoint-l) {
+			height: 330px;
+		}
+
+		
+	}
+
+	&__panels-content {
+		height: 100%;
+		border-top: 1px solid #1A1A1A;
+		border-bottom: 1px solid #1A1A1A;
+		padding: 30px 0;
+
+		
+
+		
+	}
+
+	&__panel {}
+
+	&__tabs {
+		display: flex;
+	}
+
+	&__tab {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 140%;
+		padding: 26px 30px;
+		margin-right: 30px;
+		cursor: pointer;
+		position: relative;
+
+		@media (max-width: $breakpoint-l) {
+			font-size: 18px;
+			line-height: 156%;
+		}
+
+		
+	}
+
+	&__tab::after,
+	&__tab::before {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 50%;
+
+	}
+
+	&__tab.active::after {
+		display: block;
+		content: "-";
+		transform: translateY(-55%);
+	}
+
+	&__tab:not(.active)::before {
+		display: block;
+		content: "+";
+		transform: translateY(-50%);
+	}
+
+	&-list {
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+
+		
+
+		
+
+		&__item {
+			font-size: 20px;
+			line-height: 140%;
+			padding-bottom: 12px;
+			padding-right: 15px;
+			min-width: 18%;
+
+			@media (max-width: $breakpoint-l) {
+				font-size: 18px;
+				line-height: 156%;
+				min-width: 25%;
+			}
+
+			
+
+			span {
+				cursor: pointer;
+			}
+
+			.active {
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__button {
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 140%;
+
+		@media (max-width: $breakpoint-l) {
+			padding-bottom: 30px;
+			font-size: 18px;
+			line-height: 156%;
+
+		}
+
+
+	}
+}
+
+.filter-mob {
+	padding: 20px 0;
+}

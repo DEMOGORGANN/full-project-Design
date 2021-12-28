@@ -1,0 +1,158 @@
+.about {
+	&__title {
+		padding: 56px 0;
+		width: 79%;
+		margin: 0 auto;
+		text-align: center;
+
+		@media (max-width: $breakpoint-l) {
+			padding: 37px 0;
+			width: 100%;
+		}
+
+		@media (max-width: $breakpoint-s) {
+			padding: 20px 0;
+		}
+	}
+
+	&__imgs {
+		border-top: 1px solid #1A1A1A;
+		border-bottom: 1px solid #1A1A1A;
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-auto-rows: calc(100vw / 2 * 1.06);
+
+		
+
+		
+
+		img:nth-child(odd) {
+			border-right: 1px solid #1A1A1A;
+		}
+	}
+
+	&__info {
+		padding-top: 80px;
+		width: 80%;
+
+		@media (max-width: $breakpoint-l) {
+			padding-top: 60px;
+			width: 100%;
+		}
+
+		
+
+		&-block {
+			padding-bottom: 50px;
+
+			h2 {
+				padding-bottom: 40px;
+
+				@media (max-width: $breakpoint-s) {
+					padding-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	&__img {
+		&::before {
+			padding-top: 50%;
+
+			@media (max-width: $breakpoint-l) {
+				padding-top: 117%;
+			}
+
+			@media (max-width: $breakpoint-s) {
+				padding-top: 132%;
+			}
+		}
+	}
+}
+
+.advantage {
+	&__title {
+		padding: 60px 0 40px;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+
+		@media (max-width: $breakpoint-l) {
+			width: 100%;
+		}
+
+		
+	}
+
+	&__section {
+		padding-bottom: 80px;
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $breakpoint-l) {
+			flex-direction: column;
+		}
+
+		@media (max-width: $breakpoint-s) {
+			padding-bottom: 60px;
+		}
+	}
+
+	&__section:nth-child(even) &__img {
+		order: 2;
+
+	}
+
+	&__img {
+		@media (max-width: $breakpoint-l) {
+			order: 2;
+		}
+
+		&:before {
+			padding-top: 136%;
+		}
+	}
+
+	&__block {
+		flex: 0 0 calc(50% - 30px);
+		max-width: calc(50% - 30px);
+		width: 100%;
+
+		@media (max-width: $breakpoint-l) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		
+
+		h2 {
+			padding-bottom: 40px;
+
+			@media (max-width: $breakpoint-s) {
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	&__info {
+		padding-top: 25px;
+		padding-right: 80px;
+
+		@media (max-width: $breakpoint-l) {
+			padding-right: 0;
+			padding-top: 0;
+		}
+
+		
+	}
+
+	&__item {
+		padding-bottom: 60px;
+
+		
+
+		
+	}
+
+	&__content {}
+}

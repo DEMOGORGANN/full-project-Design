@@ -1,0 +1,60 @@
+.card {
+	position: relative;
+
+	&_md {
+		padding: 30px;
+
+		@media (max-width: $breakpoint-l) {
+			padding: 20px;
+		}
+
+		
+	}
+
+	&_sm {
+		padding: 20px;
+
+		
+
+		
+	}
+
+	&__content {
+		padding-top: 10px;
+
+		
+
+		
+	}
+
+	&__title {
+		display: block;
+		font-size: 20px;
+		line-height: 140%;
+		text-align: center;
+		margin-bottom: 10px;
+		height: 28px;
+		overflow: hidden;
+
+		@media (max-width: $breakpoint-l) {
+			font-size: 18px;
+			line-height: 156%;
+
+		}
+	
+	}
+
+	&__price {
+		justify-content: center;
+	}
+
+	&__favorites {
+		position: absolute;
+		top: 31px;
+		right: 20px;
+
+		
+
+		
+	}
+}

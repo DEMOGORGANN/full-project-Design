@@ -1,0 +1,124 @@
+$breakpoint-l: 1199px;
+$breakpoint-s: 767px;
+.card {
+	display: flex;
+	padding: 9px 30px 2px 0;
+	border-bottom: 1px solid #1A1A1A;
+	@media (max-width: $breakpoint-l) {
+		padding: 10px 30px;
+	}
+	@media (max-width: $breakpoint-s) {
+		padding: 10px 20px;
+	}
+	&_img {
+		display: block;
+		width: 121px;
+		height: 128px;
+		flex-shrink: 0;
+		@media (max-width: $breakpoint-l) {
+			width: 134px;
+			height: 142px;
+		}
+		@media (max-width: $breakpoint-s) {
+			width: 139px;
+			height: 147px;
+		}
+	}
+	
+	&_content {
+		padding-left: 5px;
+		padding-top: 20px;
+		@media (max-width: $breakpoint-l) {
+			
+		}
+		@media (max-width: $breakpoint-s) {
+			padding-top: 10px;
+		}
+	}
+	
+	&_title {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 162%;
+		height: 26px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		@media (max-width: $breakpoint-l) {
+		
+		}
+		@media (max-width: $breakpoint-s) {
+			
+		}
+	}
+	
+	&_quantity {
+	
+		font-size: 16px;
+		line-height: 162%;
+		padding-bottom: 5px;
+		@media (max-width: $breakpoint-l) {
+		
+		}
+		@media (max-width: $breakpoint-s) {
+			
+		}
+	}
+	
+	 span {
+		font-weight: 500;
+	}
+	
+	 strong {
+		margin-right: 20px;
+		font-weight: 300;
+		@media (max-width: $breakpoint-l) {
+		
+		}
+		@media (max-width: $breakpoint-s) {
+			
+		}
+	}
+}
+
+.price {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 16px;
+	line-height: 162%;
+	@media (max-width: $breakpoint-l) {
+		
+	}
+	@media (max-width: $breakpoint-s) {
+		
+	}
+	 strong {
+		margin-right: 20px;
+		font-weight: 300;
+		@media (max-width: $breakpoint-l) {
+		
+		}
+		@media (max-width: $breakpoint-s) {
+			
+		}
+	}
+	
+	&_new {
+		font-weight: 500;
+		white-space: nowrap;
+	}
+	
+	&_old {
+		white-space: nowrap;
+		font-weight: 500;
+		margin-right: 8px;
+		text-decoration-line: line-through;
+		color: #CCCCCC;
+		@media (max-width: $breakpoint-l) {
+		
+		}
+		@media (max-width: $breakpoint-s) {
+			
+		}
+	}
+}
+
